@@ -5,25 +5,41 @@
     box-sizing: inherit;
 }
 
+#titulo{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
 #calculadora{
     display: block;
-    gap: 1rem;
     padding: 1.5rem;
     border: 3px solid red;
+    border-radius: 5%;
     margin-left: auto;
     margin-right: auto;
     width: 20rem;
+    height: auto;
 }
 
 #painel{
-    border: 2px dashed green;
-    text-align: center;
+    display: flex;
+    border: 2px solid rgb(152, 135, 135);
+    height: 2.2em;
+    font-size: 1.8em;
+    text-wrap: wrap;
+    margin-bottom: 0.5rem;
 }
 
 #botoes{
     padding: 1rem 1.5rem 1rem 1.5rem;
-    border: 2px dashed black;
+    border: 2px solid rgb(152, 135, 135);
+    border-radius: 5%;
     display: grid;
     grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr;
-    gap: 2rem;
+    gap: 1.5rem;
+}
+
+.simbolo{
+    font-size: medium;
+    font-weight: 600;
 }
