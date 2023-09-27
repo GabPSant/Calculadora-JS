@@ -5,6 +5,26 @@
     box-sizing: inherit;
 }
 
+html{
+    font-size: 62.5%;
+}
+
+@media (max-width: 520px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 340px){
+    html{
+        font-size: 30%;
+    }
+}
+
+main{
+    height: 100vh;
+}
+
 #titulo{
     text-align: center;
     margin-bottom: 5rem;
@@ -14,32 +34,46 @@
     display: block;
     padding: 1.5rem;
     border: 3px solid red;
-    border-radius: 5%;
+    border-radius: 3.5%;
     margin-left: auto;
     margin-right: auto;
-    width: 20rem;
-    height: auto;
+    width: 30%;
+    height: 75%;
 }
 
 #painel{
-    display: flex;
     border: 2px solid rgb(152, 135, 135);
-    height: 2.2em;
-    font-size: 1.8em;
-    text-wrap: wrap;
-    margin-bottom: 0.5rem;
+    text-align: right;
+    overflow-x: auto;
+    overflow-y: hidden;
+    direction: rtl;
+    scroll-behavior: smooth;
+    margin-bottom: 1.2rem;
+    height: fit-content;
+    height: 15%;
 }
+
 
 #botoes{
     padding: 1rem 1.5rem 1rem 1.5rem;
     border: 2px solid rgb(152, 135, 135);
     border-radius: 5%;
     display: grid;
-    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr;
-    gap: 1.5rem;
+    grid-template-columns: repeat(4, 0.3fr); /*Repete uma coluna 0.3fr 4 vezes*/
+    gap: 0.75rem;
+    height: 85%;
 }
 
 .simbolo{
-    font-size: medium;
     font-weight: 600;
+}
+
+.botao-c{
+    grid-column-start: 1; /*Inicia na coluna 1 (inicial)*/
+    grid-column-end: 3; /*Termina na coluna 3*/
+}
+
+.botao-igual{
+    grid-column-start: 3;
+    grid-column-end: 5;
 }

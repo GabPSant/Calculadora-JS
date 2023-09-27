@@ -13,24 +13,30 @@
     <main>
         <h1 id="titulo">Calculadora</h1>
         <section id="calculadora" class="p-3 mb-2 bg-dark text-white">
-            <h2 id="painel" class="p-3 mb-2 bg-success text-white"></h2>
-            <section id="botoes" class="p-3 mb-2 bg-light text-dark">
-                <button type="button" onclick=guardar(7) class="btn btn-dark simbolo">7</button>
-                <button type="button" onclick=guardar(8) class="btn btn-dark simblo">8</button>
-                <button type="button" onclick=guardar(9) class="btn btn-dark simbolo">9</button>
-                <button type="button" onclick=divisao() class="btn btn-secondary simbolo">÷</button>
-                <button type="button" onclick=guardar(4) class="btn btn-dark simbolo">4</button>
-                <button type="button" onclick=guardar(5) class="btn btn-dark simbolo">5</button>
-                <button type="button" onclick=guardar(6) class="btn btn-dark simbolo">6</button>
-                <button type="button" onclick=multiplicacao() class="btn btn-secondary simbolo">x</button>
-                <button type="button" onclick=guardar(3) class="btn btn-dark simbolo">3</button>
-                <button type="button" onclick=guardar(2) class="btn btn-dark simbolo">2</button>
-                <button type="button" onclick=guardar(1) class="btn btn-dark simbolo">1</button>
-                <button type="button" onclick=subtracao() class="btn btn-secondary simbolo">-</button>
-                <button type="button" onclick=guardar(0) class="btn btn-dark simbolo">0</button>
-                <button type="button" onclick=ponto() class="btn btn-secondary simbolo">.</button>
-                <button type="button" onclick=processamento() class="btn btn-success simbolo">=</button>
-                <button type="button" onclick=soma() class="btn btn-secondary simbolo">+</button>
+            <h2 id="painel" class="p-3 mb-2 bg-warning text-black">0</h2>
+            <section id="botoes" class="p-3 mb-2 bg-black text-dark">
+                <button type="button" value="c" class="btn btn-danger simbolo botao-c">C</button>
+                <button type="button" value="del" class="btn btn-secondary simbolo">🠔</button>
+                <button type="button" value="/" class="btn btn-secondary simbolo">÷</button>
+
+                <button type="button" value="7" class="btn btn-dark simbolo">7</button>
+                <button type="button" value="8" class="btn btn-dark simbolo" >8</button>
+                <button type="button" value="9" class="btn btn-dark simbolo">9</button>
+                <button type="button" value="*" class="btn btn-secondary simbolo">x</button>
+
+                <button type="button" value="4" class="btn btn-dark simbolo">4</button>
+                <button type="button" value="5" class="btn btn-dark simbolo">5</button>
+                <button type="button" value="6" class="btn btn-dark simbolo">6</button>
+                <button type="button" value="-" class="btn btn-secondary simbolo">-</button>
+
+                <button type="button" value="3" class="btn btn-dark simbolo">3</button>
+                <button type="button" value="2" class="btn btn-dark simbolo">2</button>
+                <button type="button" value="1"class="btn btn-dark simbolo">1</button>
+                <button type="button" value="+" class="btn btn-secondary simbolo">+</button>
+
+                <button type="button" value="0" class="btn btn-dark simbolo">0</button>
+                <button type="button" value="." class="btn btn-secondary simbolo">.</button>
+                <button type="button" value="=" class="btn btn-success simbolo botao-igual">=</button>
             </section>
         </section>
     </main>
