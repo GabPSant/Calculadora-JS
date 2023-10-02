@@ -48,7 +48,7 @@ function calcular_botoes(evento){
 
 function calcular_teclado(texto){
 
-    if(valor === resultado && (!texto.match(/[+|*|/|=]/g)|| texto !== "-") && teste){
+    if(valor === resultado && (!String(texto).match(/[+|*|/|=]/g) || texto !== "-") && teste){
         teste = false;
         valor = (texto.match([0-9]))?texto:0;
         resultado = 0;
@@ -112,4 +112,5 @@ document.addEventListener('keydown', evento =>{
     else if(chave === "Enter"){
         calcular_teclado("=");
     }
+    console.log(chave);
 })
