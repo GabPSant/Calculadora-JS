@@ -48,7 +48,7 @@ function calcular_botoes(evento){
 
 function calcular_teclado(texto){
 
-    if(valor === resultado && (!String(texto).match(/[+|*|/|=]/g) || texto !== "-") && teste){
+    if(valor === resultado && (!/^[+|*|/|=]$/.test(String(texto)) || texto !== "-") && teste){
         teste = false;
         valor = (texto.match([0-9]))?texto:0;
         resultado = 0;
@@ -103,7 +103,7 @@ document.addEventListener('keydown', evento =>{
     if(chave === "Backspace"){
         calcular_teclado("del");
     }
-    else if(chave.match(/([0-9|c|C|.|+|*|/|=])/g)){
+    else if(/^([0-9|c|C|.|+|*|/|=])$/.test(chave)){
         calcular_teclado(chave);
     }
     else if(chave === "-"){
